@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Cat&aacute;logo - Sonido Vivo</title>
+        <link href="img/Logo.png" rel="icon" type="image/png"/>
+        <link href="css/catalogo.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="encabezado-principal">
+            <div class="header-arriba">
+                <div class="contacto-rapido">
+                    <span>📍 Vi&ntilde;a del Mar, Chile</span>
+                    <span>📞 +56 9 3221 2345</span>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://instagram.com" target="_blank">
+                        <img alt="Instagram" class="icono-red" src="img/Instagram.png"/>
+                    </a>
+                    <a href="https://wa.me/56932212345" target="_blank">
+                        <img alt="WhatsApp" class="icono-red" src="img/Whatsapp.png"/>
+                    </a>
+                </div>
+            </div>
+            <hr class="divisor-header"/>
+            <div class="header-medio">
+                <a class="logo-link" href="index.html">
+                    <img alt="Sonido Vivo Logo" class="logo-img" src="img/Logo.png"/>
+                    <span class="nombre-tienda">SONIDO VIVO</span>
+                </a>
+                <a class="btn-login" href="login.html">Iniciar Sesi&oacute;n</a>
+            </div>
+            <hr class="divisor-header"/>
+            <nav class="header-bajo">
+                <ul class="nav-links">
+                    <li>
+                        <a class="nav-item" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="nav-item destacado" href="productos.html">Cat&aacute;logo</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="marcas.html">Marcas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="catalogo">
+            <h1>Cat&aacute;logo de productos</h1>
+            <p class="descripcion-catalogo">Encuentra instrumentos, equipos y accesorios para todos los m&uacute;sicos.</p>
+            <div class="filtros">
+                <button class="filtro" data-filtro="todos">Todos</button>
+                <button class="filtro" data-filtro="guitarras">Guitarras</button>
+                <button class="filtro" data-filtro="bajos">Bajos</button>
+                <button class="filtro" data-filtro="ukeleles">Ukeleles</button>
+                <button class="filtro" data-filtro="amplificadores">Amplificadores</button>
+                <button class="filtro" data-filtro="baterias">Bater&iacute;as</button>
+                <button class="filtro" data-filtro="pianos">Pianos y Teclados</button>
+                <button class="filtro" data-filtro="vientos">Vientos</button>
+                <button class="filtro" data-filtro="estudio">Estudio</button>
+            </div>
+            <p class="mensaje-filtro" id="mensaje-filtro">Mostrando todos los productos</p>
+            <div class="productos-grid" id="productos">
+                <article class="producto-card" data-categoria="guitarras">
+                    <img alt="Guitarra el&eacute;ctrica cl&aacute;sica" src="img/Guitarra.png"/>
+                    <h2>Guitarra el&eacute;ctrica cl&aacute;sica</h2>
+                    <p>Guitarra c&oacute;moda para comenzar a tocar.</p>
+                    <p class="precio-producto">$189.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=0">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="guitarras">
+                    <img alt="Guitarra el&eacute;ctrica Pro" src="img/Guitarra.png"/>
+                    <h2>Guitarra el&eacute;ctrica Pro</h2>
+                    <p>Sonido potente para ensayos y presentaciones.</p>
+                    <p class="precio-producto">$329.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=1">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="bajos">
+                    <img alt="Bajo el&eacute;ctrico 4 cuerdas" src="img/Bajo.png"/>
+                    <h2>Bajo el&eacute;ctrico 4 cuerdas</h2>
+                    <p>Bajo vers&aacute;til para distintos estilos musicales.</p>
+                    <p class="precio-producto">$299.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=2">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="bajos">
+                    <img alt="Bajo el&eacute;ctrico Jazz" src="img/Bajo.png"/>
+                    <h2>Bajo el&eacute;ctrico Jazz</h2>
+                    <p>Dise&ntilde;o c&oacute;modo y sonido definido.</p>
+                    <p class="precio-producto">$349.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=3">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="ukeleles">
+                    <img alt="Ukelele soprano" src="img/Ukelele.png"/>
+                    <h2>Ukelele soprano</h2>
+                    <p>Ukelele liviano y f&aacute;cil de transportar.</p>
+                    <p class="precio-producto">$59.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=4">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="ukeleles">
+                    <img alt="Ukelele concierto" src="img/Ukelele.png"/>
+                    <h2>Ukelele concierto</h2>
+                    <p>Mayor tama&ntilde;o para un sonido m&aacute;s completo.</p>
+                    <p class="precio-producto">$79.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=5">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="amplificadores">
+                    <img alt="Amplificador 20W" src="img/Amplificador.png"/>
+                    <h2>Amplificador 20W</h2>
+                    <p>Amplificador compacto para pr&aacute;ctica en casa.</p>
+                    <p class="precio-producto">$119.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=6">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="amplificadores">
+                    <img alt="Amplificador 50W" src="img/Amplificador.png"/>
+                    <h2>Amplificador 50W</h2>
+                    <p>M&aacute;s potencia para ensayos y salas peque&ntilde;as.</p>
+                    <p class="precio-producto">$219.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=7">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="baterias">
+                    <img alt="Bater&iacute;a ac&uacute;stica" src="img/Baterias.png"/>
+                    <h2>Bater&iacute;a ac&uacute;stica</h2>
+                    <p>Set de bater&iacute;a para principiantes y pr&aacute;ctica.</p>
+                    <p class="precio-producto">$449.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=8">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="baterias">
+                    <img alt="Bater&iacute;a ac&uacute;stica Pro" src="img/Baterias.png"/>
+                    <h2>Bater&iacute;a ac&uacute;stica Pro</h2>
+                    <p>Set completo para m&uacute;sicos con m&aacute;s experiencia.</p>
+                    <p class="precio-producto">$699.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=9">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="pianos">
+                    <img alt="Teclado 61 teclas" src="img/Pianos.png"/>
+                    <h2>Teclado 61 teclas</h2>
+                    <p>Teclado vers&aacute;til para aprender y practicar.</p>
+                    <p class="precio-producto">$199.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=10">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="pianos">
+                    <img alt="Piano digital" src="img/Pianos.png"/>
+                    <h2>Piano digital</h2>
+                    <p>Piano digital para estudio y hogar.</p>
+                    <p class="precio-producto">$429.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=11">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="vientos">
+                    <img alt="Saxof&oacute;n alto" src="img/Vientos.png"/>
+                    <h2>Saxof&oacute;n alto</h2>
+                    <p>Saxof&oacute;n para estudiantes y m&uacute;sicos aficionados.</p>
+                    <p class="precio-producto">389.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=12">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="vientos">
+                    <img alt="Set de instrumentos de viento" src="img/Vientos.png"/>
+                    <h2>Set de instrumentos de viento</h2>
+                    <p>Alternativa para comenzar a explorar instrumentos de viento.</p>
+                    <p class="precio-producto">$249.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=13">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="estudio">
+                    <img alt="Micr&oacute;fono de estudio" src="img/Estudio.png"/>
+                    <h2>Micr&oacute;fono de estudio</h2>
+                    <p>Micr&oacute;fono para grabaciones y contenido musical.</p>
+                    <p class="precio-producto">$99.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=14">Ver detalle</a>
+                </article>
+                <article class="producto-card" data-categoria="estudio">
+                    <img alt="Interfaz de audio" src="img/Estudio.png"/>
+                    <h2>Interfaz de audio</h2>
+                    <p>Interfaz compacta para grabar en computador.</p>
+                    <p class="precio-producto">$159.990</p>
+                    <a class="btn-detalle" href="producto.html?producto=15">Ver detalle</a>
+                </article>
+            </div>
+            <div class="paginacion" id="paginacion">
+            </div>
+        </main>
+        <footer class="pie-pagina">
+            <div class="contenedor-footer">
+                <div class="columna-footer info-principal">
+                    <a class="logo-footer" href="index.html">
+                        <img alt="Sonido Vivo Logo" src="img/Logo.png"/>
+                    </a>
+                    <p>📍 Arlegui 456, Vi&ntilde;a del Mar, Chile</p>
+                    <p>📞 +56 9 3221 2345</p>
+                    <p>✉️ contacto@sonidovivo.cl</p>
+                </div>
+                <div class="columna-footer">
+                    <h4>NAVEGACI&Oacute;N</h4>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Cat&aacute;logo</a>
+                        </li>
+                        <li>
+                            <a href="marcas.html">Marcas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-abajo">
+                <p>&copy; 2026 Sonido Vivo - Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="js/catalogo.js">
+        </script>
+    </body>
+</html>

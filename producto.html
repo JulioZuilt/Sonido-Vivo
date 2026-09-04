@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>Detalle - Sonido Vivo</title>
+        <link href="img/Logo.png" rel="icon" type="image/png"/>
+        <link href="css/producto.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="encabezado-principal">
+            <div class="header-arriba">
+                <div class="contacto-rapido">
+                    <span> 📍 Vi&ntilde;a del Mar, Chile</span>
+                    <span> 📞 +56 9 3221 2345</span>
+                </div>
+                <div class="redes-sociales">
+                    <a href="https://instagram.com" target="_blank">
+                        <img alt="Instagram" class="icono-red" src="img/Instagram.png"/>
+                    </a>
+                    <a href="https://wa.me/56932212345" target="_blank">
+                        <img alt="WhatsApp" class="icono-red" src="img/Whatsapp.png"/>
+                    </a>
+                </div>
+            </div>
+            <hr class="divisor-header"/>
+            <div class="header-medio">
+                <a class="logo-link" href="index.html">
+                    <img alt="Sonido Vivo Logo" class="logo-img" src="img/Logo.png"/>
+                    <span class="nombre-tienda">SONIDO VIVO</span>
+                </a>
+                <a class="btn-login" href="login.html">Iniciar Sesi&oacute;n</a>
+            </div>
+            <hr class="divisor-header"/>
+            <nav class="header-bajo">
+                <ul class="nav-links">
+                    <li>
+                        <a class="nav-item" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="nav-item destacado" href="productos.html">Cat&aacute;logo</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="marcas.html">Marcas</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="detalle-producto">
+            <button class="btn-volver" id="volver-catalogo">&larr; Volver al cat&aacute;logo</button>
+            <div class="detalle-contenido">
+                <div>
+                    <img alt="Producto" class="detalle-imagen" id="detalle-imagen" src=""/>
+                </div>
+                <div>
+                    <h1 id="detalle-nombre"></h1>
+                    <p id="detalle-descripcion"></p>
+                    <p class="detalle-precio" id="detalle-precio"></p>
+                    <div class="cantidad">
+                        <button id="menos">&minus;</button>
+                        <span id="cantidad">1</span>
+                        <button id="mas">+</button>
+                    </div>
+                    <p><strong>Total:<span id="total"></span></strong></p>
+                    <button class="btn-carrito" id="agregar">Agregar al carrito</button>
+                    <p class="mensaje-carrito" id="mensaje-carrito"></p>
+                    <div class="especificaciones-detalle">
+                        <strong>Informaci&oacute;n del producto</strong>
+                        <p>Categor&iacute;a:<span id="detalle-categoria"></span></p>
+                        <p>Disponibilidad: Disponible</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="pie-pagina">
+            <div class="contenedor-footer">
+                <div class="columna-footer info-principal">
+                    <a class="logo-footer" href="index.html"><img alt="Sonido Vivo Logo" src="img/Logo.png"/></a>
+                    <p>📍 Arlegui 456, Vi&ntilde;a del Mar, Chile</p>
+                    <p>📞 +56 9 3221 2345</p>
+                    <p>✉️ contacto@sonidovivo.cl</p>
+                </div>
+                <div class="columna-footer">
+                    <h4>NAVEGACI&Oacute;N</h4>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Cat&aacute;logo</a>
+                        </li>
+                        <li>
+                            <a href="marcas.html">Marcas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-abajo">
+                <p> &copy; 2026 Sonido Vivo - Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="js/detalle.js">
+        </script>
+    </body>
+</html>

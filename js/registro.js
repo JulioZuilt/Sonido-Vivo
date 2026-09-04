@@ -103,10 +103,6 @@ formulario.addEventListener("submit", function(event) {
         return;
     }
 
-    if (fechaNacimiento.value >= "2014"){
-        errorFecha.textContent = "Ingresa un año valido."
-        return
-    }
 
     alert("Registro realizado correctamente.");
 
