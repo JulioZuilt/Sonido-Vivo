@@ -97,12 +97,15 @@ formulario.addEventListener("submit", function(event) {
         return;
     }
 
-
+    if (fechaNacimiento.value >= "2014"){
+        errorFecha.textContent = "Debe cumplir con la minoria de edad para registrarse."
+        return;
+    }
+    
     if (fechaNacimiento.value === "") {
         errorFecha.textContent = "La fecha de nacimiento es obligatoria.";
         return;
     }
-
 
     alert("Registro realizado correctamente.");
 
