@@ -23,6 +23,23 @@ body {
     color: #4a5568;
 }
 
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icono-red {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.15);
+}
+
 .contacto-rapido span {
     margin-right: 15px;
 }

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Sonido Vivo</title>
+
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+
+    <header class="encabezado-principal">
+
+        <div class="header-arriba">
+
+            <div class="contacto-rapido">
+                <span>📍 Viña del Mar, Chile</span>
+                <span>📞 +56 9 3221 2345</span>
+            </div>
+
+            <div class="redes-sociales">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <img src="img/Instagram.png" alt="Instagram" class="icono-red">
+        </a>
+        <a href="https://wa.me/56932212345" target="_blank" aria-label="WhatsApp">
+            <img src="img/Whatsapp.png" alt="WhatsApp" class="icono-red">
+        </a>
+            </div>
+
+        </div>
+
+        <hr class="divisor-header">
+
+
+        <div class="header-medio">
+
+            <a href="index.html" class="logo-link">
+
+                <img
+                    src="img/Logo.png"
+                    alt="Sonido Vivo Logo"
+                    class="logo-img"
+                >
+
+                <span class="nombre-tienda">
+                    SONIDO VIVO
+                </span>
+
+            </a>
+
+
+            <div class="acciones">
+
+                <a href="login.html" class="btn-login">
+                    Iniciar Sesión
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <hr class="divisor-header">
+
+
+       
+        <nav class="header-bajo">
+
+            <ul class="nav-links">
+
+                <li class="menu-desplegable">
+
+                    <a href="productos.html" class="nav-item">
+                        Ver Categorías
+                    </a>
+
+
+                    <ul class="sub-menu">
+
+                        <li>
+                            <a href="productos.html#guitarras">
+                                Guitarras
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html#bajos">
+                                Bajos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html#ukeleles">
+                                Ukeleles
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html#amplificadores">
+                                Amplificadores
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html#baterias">
+                                Baterías
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html#pianos">
+                                Pianos y Teclados
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html#vientos">
+                                Vientos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="productos.html#estudio">
+                                Estudio
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="productos.html#ofertas"
+                        class="nav-item destacado"
+                    >
+                        Mega Descuentos
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="marcas.html" class="nav-item">
+                        Marcas
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="contenedor-principal registro-principal">
+
+        <section class="registro-contenedor">
+
+            <h1>Crear Cuenta</h1>
+
+            <p>
+                Regístrate en Sonido Vivo
+            </p>
+
+
+            <form id="form-registro" novalidate>
+
+
+                <!-- NOMBRE -->
+                <div class="grupo-formulario">
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        maxlength="50"
+                        autocomplete="given-name"
+                    >
+
+                    <p
+                        id="error-nombre"
+                        class="mensaje-error"
+                    ></p>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="apellido">
+                        Apellido
+                    </label>
+
+                    <input
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        maxlength="100"
+                        autocomplete="family-name"
+                    >
+
+                    <p
+                        id="error-apellido"
+                        class="mensaje-error"
+                    ></p>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        maxlength="100"
+                        autocomplete="email"
+                    >
+
+                    <p
+                        id="error-correo"
+                        class="mensaje-error"
+                    ></p>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="contrasena">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        minlength="4"
+                        maxlength="10"
+                        autocomplete="new-password"
+                    >
+
+                    <p
+                        id="error-contrasena"
+                        class="mensaje-error"
+                    ></p>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="confirmar-contrasena">
+                        Confirmar contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmar-contrasena"
+                        name="confirmar-contrasena"
+                        minlength="4"
+                        maxlength="10"
+                        autocomplete="new-password"
+                    >
+
+                    <p
+                        id="error-confirmar"
+                        class="mensaje-error"
+                    ></p>
+
+                </div>
+
+                <div class="grupo-formulario">
+
+                    <label for="fecha-nacimiento">
+                        Fecha de nacimiento
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha-nacimiento"
+                        name="fecha-nacimiento"
+                    >
+
+                    <p
+                        id="error-fecha"
+                        class="mensaje-error"
+                    ></p>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn-registrar"
+                >
+                    Registrarse
+                </button>
+
+                <div class="enlaces-registro">
+
+                    <p>
+                        ¿Ya tienes una cuenta?
+
+                        <a href="login.html">
+                            Iniciar Sesión
+                        </a>
+                    </p>
+
+
+                    <a href="index.html">
+                        Volver al inicio
+                    </a>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+
+        <div class="contenedor-footer">
+
+            <div class="columna-footer info-principal">
+
+                <a href="index.html" class="logo-footer">
+
+                    <img
+                        src="img/Logo.png"
+                        alt="Sonido Vivo Logo"
+                    >
+
+                </a>
+
+                <p>
+                    📍 Arlegui 456, Viña del Mar, Chile
+                </p>
+
+                <p>
+                    📞 +56 9 3221 2345
+                </p>
+
+                <p>
+                    ✉️ contacto@sonidovivo.cl
+                </p>
+
+            </div>
+
+
+            <div class="columna-footer">
+
+                <h4>
+                    NAVEGACIÓN
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-abajo">
+
+            <p>
+                &copy; 2026 Sonido Vivo -
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/registro.js"></script>
+    
+</body>
+</html>
