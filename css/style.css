@@ -1,0 +1,357 @@
+body {
+    background-color: #f4f7fc;
+}
+
+.encabezado-principal {
+    background-color: #e8f1ff; 
+    border-bottom: 3px solid #ff5964; 
+    padding: 10px 20px;
+}
+
+.divisor-header {
+    border: 0;
+    height: 1px;
+    background-color: #d0e1fd;
+    margin: 8px 0;
+}
+
+.header-arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.0rem;
+    color: #4a5568;
+}
+
+.contacto-rapido span {
+    margin-right: 15px;
+}
+
+.header-medio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    flex: 1;
+}
+
+.logo-img {
+    height: 110px;
+    width: auto;
+}
+
+.nombre-tienda {
+    color: #ff5964;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex: 1;
+}
+
+.btn-login {
+    background-color: #ff5964; 
+    color: white;
+    font-size: 1.0rem;
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header-bajo {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.menu-desplegable {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    border: 1px solid #d0e1fd;
+    list-style: none;
+    padding: 6px 0;
+    z-index: 1000;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #2d3748;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sub-menu li a:hover {
+    background-color: #e8f1ff;
+    color: #ff5964;
+}
+
+.menu-desplegable:hover .sub-menu {
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav-item:hover {
+    color: #ff5964;
+}
+
+.destacado {
+    color: #ff5964;
+}
+
+.contenedor-principal{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.banner{
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.banner-img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 16px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.tarjeta-beneficio {
+    background-color: #e8f1ff;
+    border: 1px solid #d0e1fd;
+    border-left: 4px solid #ff5964;
+    padding: 10px 14px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.icono-beneficio {
+    font-size: 1.1rem;
+}
+
+.texto-beneficio strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #ff5964; 
+}
+
+.texto-beneficio p {
+    font-size: 0.78rem;
+    color: #4a5568;
+    margin-top: 2px;
+}
+
+.categorias{
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.titulo-seccion {
+    font-size: 1.5rem;
+    color: #2d3748;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.titulo-seccion span {
+    color: #ff5964;
+}
+
+.img-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.tarjeta-categoria {
+    background-color: #ffffff;
+    border: 1px solid #d0e1fd;
+    border-radius: 12px;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.tarjeta-categoria:hover {
+    transform: translateY(-4px);
+    border-color: #ff5964; 
+}
+
+.tarjeta-categoria img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.tarjeta-categoria span {
+    color: #2d3748;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.seccion-historia{
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.seccion-historia h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.seccion-historia span{
+    color: #ff5964;
+}
+
+.seccion-historia p {
+    color: #3d414a;
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+.pie-pagina {
+    background-color: #1a1a1a;
+    color: #cbd5e0;
+    border-top: 3px solid #ff5964;
+    padding-top: 30px;
+    font-size: 0.88rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+
+.contenedor-footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.columna-footer h4 {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.info-principal p {
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: #a0aec0;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.logo-footer img {
+    height: 90px;
+    width: auto;
+}
+
+.columna-footer ul {
+    list-style: none;
+}
+
+.columna-footer ul li {
+    margin-bottom: 8px;
+}
+
+.columna-footer ul li a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.columna-footer ul li a:hover {
+    color: #ff5964;
+}
+
+.footer-abajo {
+    background-color: #111111;
+    text-align: center;
+    padding: 12px 0;
+    border-top: 1px solid #2d3748;
+    font-size: 0.78rem;
+    color: #718096;
+}
+
+.seccion-video {
+    max-width: 10000px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.video-destacado {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #d0e1fd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: block;
+}
