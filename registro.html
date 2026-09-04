@@ -22,17 +22,17 @@
 
             <div class="redes-sociales">
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-            <img src="img/Instagram.png" alt="Instagram" class="icono-red">
-        </a>
-        <a href="https://wa.me/56932212345" target="_blank" aria-label="WhatsApp">
-            <img src="img/Whatsapp.png" alt="WhatsApp" class="icono-red">
-        </a>
+                    <img src="img/Instagram.png" alt="Instagram" class="icono-red">
+                </a>
+
+                <a href="https://wa.me/56932212345" target="_blank" aria-label="WhatsApp">
+                    <img src="img/Whatsapp.png" alt="WhatsApp" class="icono-red">
+                </a>
             </div>
 
         </div>
 
         <hr class="divisor-header">
-
 
         <div class="header-medio">
 
@@ -50,7 +50,6 @@
 
             </a>
 
-
             <div class="acciones">
 
                 <a href="login.html" class="btn-login">
@@ -61,11 +60,8 @@
 
         </div>
 
-
         <hr class="divisor-header">
 
-
-       
         <nav class="header-bajo">
 
             <ul class="nav-links">
@@ -75,7 +71,6 @@
                     <a href="productos.html" class="nav-item">
                         Ver Categorías
                     </a>
-
 
                     <ul class="sub-menu">
 
@@ -130,7 +125,6 @@
                     </ul>
 
                 </li>
-
 
                 <li>
 
@@ -192,6 +186,8 @@
 
                 </div>
 
+
+                <!-- APELLIDO -->
                 <div class="grupo-formulario">
 
                     <label for="apellido">
@@ -213,6 +209,8 @@
 
                 </div>
 
+
+                <!-- CORREO -->
                 <div class="grupo-formulario">
 
                     <label for="correo">
@@ -234,6 +232,32 @@
 
                 </div>
 
+
+                <!-- TELÉFONO -->
+                <div class="grupo-formulario">
+
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="text"
+                        id="telefono"
+                        name="telefono"
+                        maxlength="15"
+                        placeholder="+56 9 1234 5678"
+                        autocomplete="tel"
+                    >
+
+                    <p
+                        id="error-telefono"
+                        class="mensaje-error"
+                    ></p>
+
+                </div>
+
+
+                <!-- CONTRASEÑA -->
                 <div class="grupo-formulario">
 
                     <label for="contrasena">
@@ -241,13 +265,17 @@
                     </label>
 
                     <input
-                        type="password"
+                        type="text"
                         id="contrasena"
                         name="contrasena"
-                        minlength="4"
-                        maxlength="10"
+                        minlength="8"
+                        maxlength="12"
                         autocomplete="new-password"
                     >
+
+                    <p class="ayuda-contrasena">
+                        Debe tener entre 8 y 12 caracteres e incluir mayúscula, minúscula y número.
+                    </p>
 
                     <p
                         id="error-contrasena"
@@ -256,6 +284,8 @@
 
                 </div>
 
+
+                <!-- CONFIRMAR CONTRASEÑA -->
                 <div class="grupo-formulario">
 
                     <label for="confirmar-contrasena">
@@ -263,11 +293,11 @@
                     </label>
 
                     <input
-                        type="password"
+                        type="text"
                         id="confirmar-contrasena"
                         name="confirmar-contrasena"
-                        minlength="4"
-                        maxlength="10"
+                        minlength="8"
+                        maxlength="12"
                         autocomplete="new-password"
                     >
 
@@ -278,6 +308,8 @@
 
                 </div>
 
+
+                <!-- FECHA DE NACIMIENTO -->
                 <div class="grupo-formulario">
 
                     <label for="fecha-nacimiento">
@@ -297,12 +329,14 @@
 
                 </div>
 
+
                 <button
                     type="submit"
                     class="btn-registrar"
                 >
                     Registrarse
                 </button>
+
 
                 <div class="enlaces-registro">
 
@@ -313,7 +347,6 @@
                             Iniciar Sesión
                         </a>
                     </p>
-
 
                     <a href="index.html">
                         Volver al inicio
@@ -391,6 +424,6 @@
     </footer>
 
     <script src="js/registro.js"></script>
-    
+
 </body>
 </html>

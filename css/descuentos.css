@@ -1,180 +1,24 @@
-/* CONTENEDOR GENERAL DE MEGA DESCUENTOS */
-
-.seccion-descuentos {
-    max-width: 1000px;
-    margin: 40px auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-/* TÍTULO DE LA SECCIÓN */
-
-.encabezado-descuentos {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.encabezado-descuentos h1 {
-    color: #2d3748;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.encabezado-descuentos h1 span {
-    color: #ff5964;
-}
-
-.encabezado-descuentos p {
-    color: #4a5568;
-    font-size: 0.9rem;
-}
-
-
-/* LISTA DE PRODUCTOS */
-
-.lista-descuentos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-
-/* TARJETA */
-
-.tarjeta-descuento {
+.producto-card {
     position: relative;
-
-    background-color: #ffffff;
-
-    border: 1px solid #d0e1fd;
-    border-radius: 12px;
-
-    padding: 20px;
-
-    text-align: center;
-
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-
-    transition: transform 0.2s, border-color 0.2s;
 }
-
-.tarjeta-descuento:hover {
-    transform: translateY(-4px);
-    border-color: #ff5964;
-}
-
-
-/* ETIQUETA DEL DESCUENTO */
 
 .etiqueta-descuento {
     position: absolute;
-
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
 
     background-color: #ff5964;
     color: white;
 
-    padding: 7px 10px;
+    padding: 6px 10px;
 
-    border-radius: 20px;
+    border-radius: 8px;
 
-    font-size: 0.85rem;
+    font-size: 13px;
     font-weight: bold;
 }
-
-
-/* IMÁGENES */
-
-.img-descuento {
-    width: 100%;
-    max-width: 220px;
-    height: 180px;
-
-    object-fit: contain;
-
-    margin: 10px auto 20px auto;
-
-    display: block;
-}
-
-/* INFORMACIÓN DEL PRODUCTO */
-
-.info-descuento h2 {
-    color: #2d3748;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-.descripcion-descuento {
-    color: #4a5568;
-    font-size: 0.82rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-
-/* PRECIO ORIGINAL */
 
 .precio-anterior {
     color: #718096;
-
-    font-size: 0.9rem;
-
     text-decoration: line-through;
-
-    margin-bottom: 5px;
-}
-
-
-/* PRECIO CON DESCUENTO */
-
-.precio-oferta {
-    color: #ff5964;
-
-    font-size: 1.4rem;
-    font-weight: bold;
-
-    margin-bottom: 15px;
-}
-
-
-/* BOTÓN */
-
-.btn-ver-producto {
-    display: inline-block;
-
-    background-color: #ff5964;
-    color: white;
-
-    padding: 10px 18px;
-
-    border-radius: 20px;
-
-    text-decoration: none;
-
-    font-size: 0.85rem;
-    font-weight: bold;
-
-    transition: background-color 0.3s;
-}
-
-.btn-ver-producto:hover {
-    background-color: #e84c57;
-}
-
-
-/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
-
-@media (max-width: 700px) {
-
-    .lista-descuentos {
-        grid-template-columns: 1fr;
-    }
-
-    .img-descuento {
-        max-width: 180px;
-        height: 150px;
-    }
-
 }

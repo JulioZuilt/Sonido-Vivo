@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,33 +9,49 @@
 
     <link rel="icon" type="image/png" href="img/Logo.png">
 
+    <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/descuentos.css">    
+    <link rel="stylesheet" href="css/descuentos.css">
 </head>
 
 <body>
+
     <header class="encabezado-principal">
 
         <div class="header-arriba">
-            <div class="contacto-rapido">
-              <span>📍 Viña del Mar, Chile</span>
-              <span>📞 +56 9 3221 2345</span>   
-        </div>
 
-        <div class="redes-sociales">
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-            <img src="img/Instagram.png" alt="Instagram" class="icono-red">
-        </a>
-        <a href="https://wa.me/56932212345" target="_blank" aria-label="WhatsApp">
-            <img src="img/Whatsapp.png" alt="WhatsApp" class="icono-red">
-        </a>
+            <div class="contacto-rapido">
+                <span>📍 Viña del Mar, Chile</span>
+                <span>📞 +56 9 3221 2345</span>
+            </div>
+
+            <div class="redes-sociales">
+
+                <a href="https://instagram.com"
+                   target="_blank"
+                   aria-label="Instagram">
+
+                    <img src="img/Instagram.png"
+                         alt="Instagram"
+                         class="icono-red">
+
+                </a>
+
+                <a href="https://wa.me/56932212345"
+                   target="_blank"
+                   aria-label="WhatsApp">
+
+                    <img src="img/Whatsapp.png"
+                         alt="WhatsApp"
+                         class="icono-red">
+
+                </a>
+
             </div>
 
         </div>
 
-
         <hr class="divisor-header">
-
 
         <div class="header-medio">
 
@@ -51,7 +67,6 @@
 
             </a>
 
-
             <div class="acciones">
 
                 <a href="login.html" class="btn-login">
@@ -62,11 +77,8 @@
 
         </div>
 
-
         <hr class="divisor-header">
 
-
-        <!-- NAVEGACIÓN -->
         <nav class="header-bajo">
 
             <ul class="nav-links">
@@ -131,19 +143,21 @@
 
                 </li>
 
-
-                <!-- Temporalmente apunta a esta misma página -->
                 <li>
                     <a href="#ofertas"
                        class="nav-item destacado">
+
                         Mega Descuentos
+
                     </a>
                 </li>
 
-
                 <li>
-                    <a href="marcas.html" class="nav-item">
+                    <a href="marcas.html"
+                       class="nav-item">
+
                         Marcas
+
                     </a>
                 </li>
 
@@ -154,330 +168,323 @@
     </header>
 
 
+    <main class="catalogo">
 
-    <main class="contenedor-principal">
+        <section id="ofertas">
 
-        <section id="ofertas" class="seccion-descuentos">
+            <h1>
+                Mega Descuentos
+            </h1>
 
-            <div class="encabezado-descuentos">
+            <p class="descripcion-catalogo">
+                Aprovecha nuestras promociones especiales
+                en instrumentos y equipos musicales.
+            </p>
 
-                <h1>
-                    Mega <span>Descuentos</span>
-                </h1>
+            <div class="productos-grid">
 
-                <p>
-                    Aprovecha nuestras promociones especiales
-                    en instrumentos y equipos musicales.
-                </p>
+                <!-- GUITARRA -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -25%
+                    </div>
+
+                    <img src="img/Guitarra.png"
+                         alt="Guitarra eléctrica">
+
+                    <h2>
+                        Guitarra Eléctrica
+                    </h2>
+
+                    <p>
+                        Guitarra ideal para músicos que buscan
+                        excelente sonido y comodidad.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $189.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $142.493
+                    </p>
+
+                    <a href="producto.html?producto=0&oferta=142493"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
+
+
+                <!-- BAJO -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -20%
+                    </div>
+
+                    <img src="img/Bajo.png"
+                         alt="Bajo eléctrico">
+
+                    <h2>
+                        Bajo Eléctrico
+                    </h2>
+
+                    <p>
+                        Bajo eléctrico ideal para ensayos,
+                        presentaciones y músicos que buscan un sonido potente.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $299.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $239.992
+                    </p>
+
+                    <a href="producto.html?producto=2&oferta=239992"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
+
+
+                <!-- UKELELE -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -15%
+                    </div>
+
+                    <img src="img/Ukelele.png"
+                         alt="Ukelele acústico">
+
+                    <h2>
+                        Ukelele Acústico
+                    </h2>
+
+                    <p>
+                        Ukelele liviano y cómodo,
+                        ideal para comenzar a tocar
+                        y disfrutar de un sonido cálido.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $59.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $50.992
+                    </p>
+
+                    <a href="producto.html?producto=4&oferta=50992"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
+
+
+                <!-- AMPLIFICADOR -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -20%
+                    </div>
+
+                    <img src="img/Amplificador.png"
+                         alt="Amplificador">
+
+                    <h2>
+                        Amplificador
+                    </h2>
+
+                    <p>
+                        Amplificador para guitarra con excelente
+                        potencia y calidad de sonido.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $119.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $95.992
+                    </p>
+
+                    <a href="producto.html?producto=6&oferta=95992"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
+
+
+                <!-- BATERÍA -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -15%
+                    </div>
+
+                    <img src="img/Baterias.png"
+                         alt="Batería acústica">
+
+                    <h2>
+                        Batería Acústica
+                    </h2>
+
+                    <p>
+                        Batería completa para quienes buscan
+                        comenzar o mejorar su experiencia musical.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $449.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $382.492
+                    </p>
+
+                    <a href="producto.html?producto=8&oferta=382492"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
+
+
+                <!-- PIANO / TECLADO -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -30%
+                    </div>
+
+                    <img src="img/Pianos.png"
+                         alt="Teclado musical">
+
+                    <h2>
+                        Teclado Musical
+                    </h2>
+
+                    <p>
+                        Teclado versátil para practicar,
+                        interpretar y crear música.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $199.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $139.993
+                    </p>
+
+                    <a href="producto.html?producto=10&oferta=139993"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
+
+
+                <!-- VIENTOS -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -20%
+                    </div>
+
+                    <img src="img/Vientos.png"
+                         alt="Instrumento de viento">
+
+                    <h2>
+                        Instrumento de Viento
+                    </h2>
+
+                    <p>
+                        Instrumento pensado para estudiantes
+                        y músicos que buscan buena calidad de sonido.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $389.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $311.992
+                    </p>
+
+                    <a href="producto.html?producto=12&oferta=311992"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
+
+
+                <!-- ESTUDIO -->
+                <article class="producto-card">
+
+                    <div class="etiqueta-descuento">
+                        -25%
+                    </div>
+
+                    <img src="img/Estudio.png"
+                         alt="Equipo de estudio">
+
+                    <h2>
+                        Equipo de Estudio
+                    </h2>
+
+                    <p>
+                        Equipo ideal para grabación
+                        y producción musical desde un estudio personal.
+                    </p>
+
+                    <p class="precio-anterior">
+                        $99.990
+                    </p>
+
+                    <p class="precio-producto">
+                        $74.993
+                    </p>
+
+                    <a href="producto.html?producto=14&oferta=74993"
+                       class="btn-detalle">
+
+                        Ver producto
+
+                    </a>
+
+                </article>
 
             </div>
-
-
-
-            <!-- OFERTA -->
-           <!-- OFERTAS -->
-<div class="lista-descuentos">
-
-    <!-- GUITARRA -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -25%
-        </div>
-
-        <img src="img/Guitarra.png"
-             alt="Guitarra eléctrica"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Guitarra Eléctrica</h2>
-
-            <p class="descripcion-descuento">
-                Guitarra ideal para músicos que buscan
-                excelente sonido y comodidad.
-            </p>
-
-            <p class="precio-anterior">
-                $399.990
-            </p>
-
-            <p class="precio-oferta">
-                $299.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <!-- BAJO -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -20%
-        </div>
-
-        <img src="img/Bajo.png"
-             alt="Bajo eléctrico"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Bajo Eléctrico</h2>
-
-            <p class="descripcion-descuento">
-                Bajo eléctrico ideal para ensayos,
-                presentaciones y músicos que buscan un sonido potente.
-            </p>
-
-            <p class="precio-anterior">
-                $349.990
-            </p>
-
-            <p class="precio-oferta">
-                $279.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <!-- UKELELE -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -15%
-        </div>
-
-        <img src="img/Ukelele.png"
-             alt="Ukelele acústico"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Ukelele Acústico</h2>
-
-            <p class="descripcion-descuento">
-                Ukelele liviano y cómodo, ideal para comenzar
-                a tocar y disfrutar de un sonido cálido.
-            </p>
-
-            <p class="precio-anterior">
-                $79.990
-            </p>
-
-            <p class="precio-oferta">
-                $67.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <!-- AMPLIFICADOR -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -20%
-        </div>
-
-        <img src="img/Amplificador.png"
-             alt="Amplificador"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Amplificador</h2>
-
-            <p class="descripcion-descuento">
-                Amplificador para guitarra con excelente
-                potencia y calidad de sonido.
-            </p>
-
-            <p class="precio-anterior">
-                $249.990
-            </p>
-
-            <p class="precio-oferta">
-                $199.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <!-- BATERÍA -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -15%
-        </div>
-
-        <img src="img/Baterias.png"
-             alt="Batería acústica"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Batería Acústica</h2>
-
-            <p class="descripcion-descuento">
-                Batería completa para quienes buscan
-                comenzar o mejorar su experiencia musical.
-            </p>
-
-            <p class="precio-anterior">
-                $499.990
-            </p>
-
-            <p class="precio-oferta">
-                $424.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <!-- PIANO / TECLADO -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -30%
-        </div>
-
-        <img src="img/Pianos.png"
-             alt="Teclado musical"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Teclado Musical</h2>
-
-            <p class="descripcion-descuento">
-                Teclado versátil para practicar,
-                interpretar y crear música.
-            </p>
-
-            <p class="precio-anterior">
-                $299.990
-            </p>
-
-            <p class="precio-oferta">
-                $209.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <!-- VIENTOS -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -20%
-        </div>
-
-        <img src="img/Vientos.png"
-             alt="Instrumento de viento"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Instrumento de Viento</h2>
-
-            <p class="descripcion-descuento">
-                Instrumento pensado para estudiantes y músicos
-                que buscan buena calidad de sonido.
-            </p>
-
-            <p class="precio-anterior">
-                $199.990
-            </p>
-
-            <p class="precio-oferta">
-                $159.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <!-- ESTUDIO -->
-    <article class="tarjeta-descuento">
-
-        <div class="etiqueta-descuento">
-            -25%
-        </div>
-
-        <img src="img/Estudio.png"
-             alt="Equipo de estudio"
-             class="img-descuento">
-
-        <div class="info-descuento">
-
-            <h2>Equipo de Estudio</h2>
-
-            <p class="descripcion-descuento">
-                Equipo ideal para grabación y producción musical
-                desde un estudio personal.
-            </p>
-
-            <p class="precio-anterior">
-                $239.990
-            </p>
-
-            <p class="precio-oferta">
-                $179.990
-            </p>
-
-            <a href="#" class="btn-ver-producto">
-                Ver producto
-            </a>
-
-        </div>
-
-    </article>
-
-</div>
 
         </section>
 
     </main>
+
 
     <footer class="pie-pagina">
 
@@ -485,23 +492,33 @@
 
             <div class="columna-footer info-principal">
 
-                <a href="index.html" class="logo-footer">
+                <a href="index.html"
+                   class="logo-footer">
 
                     <img src="img/Logo.png"
                          alt="Sonido Vivo Logo">
 
                 </a>
 
-                <p>📍 Arlegui 456, Viña del Mar, Chile</p>
-                <p>📞 +56 9 3221 2345</p>
-                <p>✉️ contacto@sonidovivo.cl</p>
+                <p>
+                    📍 Arlegui 456, Viña del Mar, Chile
+                </p>
+
+                <p>
+                    📞 +56 9 3221 2345
+                </p>
+
+                <p>
+                    ✉️ contacto@sonidovivo.cl
+                </p>
 
             </div>
 
-
             <div class="columna-footer">
 
-                <h4>NAVEGACIÓN</h4>
+                <h4>
+                    NAVEGACIÓN
+                </h4>
 
                 <ul>
 
@@ -516,7 +533,6 @@
             </div>
 
         </div>
-
 
         <div class="footer-abajo">
 

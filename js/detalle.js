@@ -16,6 +16,7 @@ const productos = [
     {"categoria": "amplificadores", "nombre": "Amplificador 50W", "descripcion": "Más potencia para ensayos y salas pequeñas.", "precio": "$219.990", "imagen": "Amplificador.png"},
          
     {"categoria": "baterias", "nombre": "Batería acústica", "descripcion": "Set de batería para principiantes y práctica.", "precio": "$449.990", "imagen": "Baterias.png"},
+
     {"categoria": "baterias", "nombre": "Batería acústica Pro", "descripcion": "Set completo para músicos con más experiencia.", "precio": "$699.990", "imagen": "Baterias.png"},
 
     {"categoria": "pianos", "nombre": "Teclado 61 teclas", "descripcion": "Teclado versátil para aprender y practicar.", "precio": "$199.990", "imagen": "Pianos.png"},
@@ -28,17 +29,26 @@ const productos = [
            
     {"categoria": "estudio", "nombre": "Micrófono de estudio", "descripcion": "Micrófono para grabaciones y contenido musical.", "precio": "$99.990", "imagen": "Estudio.png"},
            
-    {"categoria": "estudio", "nombre": "Interfaz de audio", "descripcion": "Interfaz compacta para grabar en computador.", "precio": "$159.990", "imagen": "Estudio.png"}];
+    {"categoria": "estudio", "nombre": "Interfaz de audio", "descripcion": "Interfaz compacta para grabar en computador.", "precio": "$159.990", "imagen": "Estudio.png"}
+];
 
 const datos = new URLSearchParams(window.location.search);
 const numero = Number(datos.get("producto"));
 const producto = productos[numero] || productos[0];
 
+const oferta = datos.get("oferta");
+
+let precioActual = producto.precio;
+
+if (oferta) {
+    precioActual = "$" + Number(oferta).toLocaleString("es-CL");
+}
+
 document.getElementById("detalle-imagen").src = "img/" + producto.imagen;
 document.getElementById("detalle-imagen").alt = producto.nombre;
 document.getElementById("detalle-nombre").textContent = producto.nombre;
 document.getElementById("detalle-descripcion").textContent = producto.descripcion;
-document.getElementById("detalle-precio").textContent = producto.precio;
+document.getElementById("detalle-precio").textContent = precioActual;
 document.getElementById("detalle-categoria").textContent = producto.categoria;
 
 let cantidad = 1;
@@ -50,17 +60,21 @@ function numeroPrecio(precio) {
 }
 
 function actualizarTotal() {
-    const total = numeroPrecio(producto.precio) * cantidad;
+    const total = numeroPrecio(precioActual) * cantidad;
     totalTexto.textContent = "$" + total.toLocaleString("es-CL");
     cantidadTexto.textContent = cantidad;
 }
 
 document.getElementById("menos").addEventListener("click", function () {
-    if (cantidad > 1) { cantidad--; actualizarTotal(); }
+    if (cantidad > 1) { 
+        cantidad--; 
+        actualizarTotal(); 
+    }
 });
 
 document.getElementById("mas").addEventListener("click", function () {
-    cantidad++; actualizarTotal();
+    cantidad++; 
+    actualizarTotal();
 });
 
 document.getElementById("agregar").addEventListener("click", function () {
@@ -69,10 +83,12 @@ document.getElementById("agregar").addEventListener("click", function () {
 
 document.getElementById("volver-catalogo").addEventListener("click", function () {
     const regreso = sessionStorage.getItem("volverCatalogo");
+
     if (regreso) {
         sessionStorage.setItem("restaurarCatalogo", regreso);
         sessionStorage.removeItem("volverCatalogo");
     }
+
     window.location.href = regreso ? JSON.parse(regreso).url : "productos.html";
 });
 
