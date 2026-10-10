@@ -1,0 +1,94 @@
+.ofertas-page {
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ofertas-page h1 {
+  color: #2d3748;
+}
+
+.ofertas-page .descripcion-catalogo {
+  color: #4a5568;
+}
+
+.ofertas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  text-align: left;
+}
+
+.oferta-card {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #d0e1fd;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.oferta-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.oferta-card h2 {
+  font-size: 17px;
+}
+
+.oferta-card p {
+  font-size: 14px;
+}
+
+.oferta-card .etiqueta-descuento {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #ff5964;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.precio-anterior {
+  color: #718096;
+  text-decoration: line-through;
+}
+
+.oferta-card .precio-producto {
+  color: #ff5964;
+  font-weight: bold;
+}
+
+.btn-detalle {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #ff5964;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-detalle:hover {
+  background: #e84450;
+}
+
+@media (max-width: 900px) {
+  .ofertas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .ofertas-page {
+    padding: 0 16px;
+  }
+
+  .ofertas-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,166 @@
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.tarjeta-beneficio {
+  background-color: #e8f1ff;
+  border: 1px solid #d0e1fd;
+  border-left: 4px solid #ff5964;
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.icono-beneficio {
+  font-size: 1.1rem;
+}
+
+.texto-beneficio strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #ff5964;
+}
+
+.texto-beneficio p {
+  font-size: 0.78rem;
+  color: #4a5568;
+  margin-top: 2px;
+}
+
+.categorias {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo-seccion {
+  font-size: 1.5rem;
+  color: #2d3748;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.titulo-seccion span {
+  color: #ff5964;
+}
+
+.img-categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.tarjeta-categoria {
+  background-color: #ffffff;
+  border: 1px solid #d0e1fd;
+  border-radius: 12px;
+  padding: 15px 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.tarjeta-categoria:hover {
+  transform: translateY(-4px);
+  border-color: #ff5964;
+}
+
+.tarjeta-categoria img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tarjeta-categoria span {
+  color: #2d3748;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.seccion-historia {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.seccion-historia h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+.seccion-historia span {
+  color: #ff5964;
+}
+
+.seccion-historia p {
+  color: #3d414a;
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+.seccion-video {
+  max-width: 10000px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.video-destacado {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #d0e1fd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .beneficios {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .img-categorias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 20px;
+  }
+}
