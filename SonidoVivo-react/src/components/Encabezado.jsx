@@ -1,6 +1,7 @@
 import instagram from '../assets/img/Instagram.png'
 import logo from '../assets/img/Logo.png'
 import whatsapp from '../assets/img/Whatsapp.png'
+import { itemsMenu } from '../data/itemsMenu'
 
 function Encabezado() {
   return (
@@ -37,21 +38,22 @@ function Encabezado() {
 
       <nav className="header-bajo" aria-label="Navegación principal">
         <ul className="nav-links">
-          <li className="menu-desplegable">
-            <a href="../productos.html" className="nav-item">Ver Categorías</a>
-            <ul className="sub-menu">
-              <li><a href="../productos.html#guitarras">Guitarras</a></li>
-              <li><a href="../productos.html#bajos">Bajos</a></li>
-              <li><a href="../productos.html#ukeleles">Ukeleles</a></li>
-              <li><a href="../productos.html#amplificadores">Amplificadores</a></li>
-              <li><a href="../productos.html#baterias">Baterías</a></li>
-              <li><a href="../productos.html#pianos">Pianos y Teclados</a></li>
-              <li><a href="../productos.html#vientos">Vientos</a></li>
-              <li><a href="../productos.html#estudio">Estudio</a></li>
-            </ul>
-          </li>
-          <li><a href="/mega-descuento" className="nav-item destacado">Mega Descuentos</a></li>
-          <li><a href="../marcas.html" className="nav-item">Marcas</a></li>
+          {itemsMenu.map(({ label, to, destacado, subItems }) => (
+            <li className={subItems ? 'menu-desplegable' : undefined} key={label}>
+              <a href={to} className={`nav-item${destacado ? ' destacado' : ''}`}>
+                {label}
+              </a>
+              {subItems && (
+                <ul className="sub-menu">
+                  {subItems.map((item) => (
+                    <li key={item.label}>
+                      <a href={item.to}>{item.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
