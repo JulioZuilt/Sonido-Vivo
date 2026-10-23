@@ -1,0 +1,33 @@
+.pagina-not-found {
+  display: flex;
+  min-height: 40vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.pagina-not-found h1 {
+  margin-bottom: 8px;
+  color: #2d3748;
+  font-size: 2.5rem;
+}
+
+.pagina-not-found p {
+  color: #4a5568;
+}
+
+.pagina-not-found a {
+  margin-top: 12px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  background: #ff5964;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pagina-not-found a:hover {
+  background: #e84c57;
+}

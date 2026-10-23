@@ -80,6 +80,26 @@
   transition: background-color 0.3s;
 }
 
+.acciones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-header-accion {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.btn-header-cerrar {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .header-bajo {
   display: flex;
   justify-content: center;
@@ -211,4 +231,31 @@
   border-top: 1px solid #2d3748;
   font-size: 0.78rem;
   color: #718096;
+}
+
+@media (max-width: 700px) {
+  .header-medio {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .acciones {
+    justify-content: center;
+  }
+
+  .header-bajo {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
 }

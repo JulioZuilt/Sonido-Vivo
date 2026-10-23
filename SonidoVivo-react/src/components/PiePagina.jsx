@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/img/Logo.png'
 
 function PiePagina() {
@@ -5,9 +6,9 @@ function PiePagina() {
     <footer className="pie-pagina">
       <div className="contenedor-footer">
         <div className="columna-footer info-principal">
-          <a href="./" className="logo-footer">
+          <Link to="/" className="logo-footer">
             <img src={logo} alt="Sonido Vivo Logo" />
-          </a>
+          </Link>
           <p>📍 Arlegui 456, Viña del Mar, Chile</p>
           <p>📞 +56 9 3221 2345</p>
           <p>✉️ contacto@sonidovivo.cl</p>
@@ -16,7 +17,7 @@ function PiePagina() {
         <div className="columna-footer">
           <h4>NAVEGACIÓN</h4>
           <ul>
-            <li><a href="./">Inicio</a></li>
+            <li><Link to="/">Inicio</Link></li>
           </ul>
         </div>
       </div>

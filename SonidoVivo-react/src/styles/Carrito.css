@@ -1,0 +1,136 @@
+.carrito-pagina {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.carrito-page {
+  flex: 1;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.carrito-page h1 {
+  color: #2d3748;
+  margin-bottom: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carrito-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.carrito-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.carrito-item {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 18px;
+  align-items: center;
+  background: white;
+  border: 1px solid #d0e1fd;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.carrito-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.carrito-info h2 {
+  margin: 0 0 6px;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.carrito-info p {
+  margin: 0 0 6px;
+  color: #4a5568;
+  text-transform: capitalize;
+}
+
+.carrito-info strong {
+  color: #ff5964;
+}
+
+.carrito-controles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrito-controles button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d0e1fd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.carrito-controles span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.carrito-resumen {
+  background: #e8f1ff;
+  border: 1px solid #d0e1fd;
+  border-left: 4px solid #ff5964;
+  border-radius: 12px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.carrito-resumen h2 {
+  margin-top: 0;
+  color: #2d3748;
+}
+
+.resumen-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  color: #2d3748;
+}
+
+.btn-comprar {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #ff5964;
+  color: white;
+  padding: 12px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carrito-vacio {
+  background: #e8f1ff;
+  border: 1px solid #d0e1fd;
+  border-radius: 12px;
+  padding: 24px;
+  color: #2d3748;
+}
+
+@media (max-width: 720px) {
+  .carrito-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .carrito-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

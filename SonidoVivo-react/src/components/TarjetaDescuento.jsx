@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function TarjetaDescuento({ oferta }) {
   const { descuento, imagen, nombre, descripcion, precioAnterior, precioOferta, precioActual, productoId } = oferta
 
@@ -9,9 +11,9 @@ function TarjetaDescuento({ oferta }) {
       <p>{descripcion}</p>
       <p className="precio-anterior">{precioAnterior}</p>
       <p className="precio-producto">{precioActual}</p>
-      <a href={`./producto.html?producto=${productoId}&oferta=${precioOferta}`} className="btn-detalle">
+      <Link to={`/producto?producto=${productoId}&oferta=${precioOferta}`} className="btn-detalle">
         Ver producto
-      </a>
+      </Link>
     </article>
   )
 }

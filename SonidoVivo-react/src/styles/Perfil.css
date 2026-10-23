@@ -1,0 +1,57 @@
+.perfil-pagina {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.perfil-tarjeta {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border: 1px solid #d0e1fd;
+  border-left: 4px solid #ff5964;
+  border-radius: 12px;
+  background: #e8f1ff;
+  box-sizing: border-box;
+}
+
+.perfil-tarjeta h1 {
+  margin-top: 0;
+  color: #2d3748;
+}
+
+.perfil-datos {
+  margin: 0 0 24px;
+}
+
+.perfil-datos div {
+  padding: 14px 0;
+  border-bottom: 1px solid #d0e1fd;
+}
+
+.perfil-datos dt {
+  margin-bottom: 5px;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.perfil-datos dd {
+  margin: 0;
+  color: #2d3748;
+}
+
+.perfil-cerrar-sesion {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 20px;
+  background: #ff5964;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.perfil-cerrar-sesion:hover {
+  background: #e84c57;
+}
